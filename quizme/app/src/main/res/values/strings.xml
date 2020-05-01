@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">QuizMe</string>
+    <string name="question">Who was the 35th president of the United States?</string>
+    <string name="optionA">John F. Kennedy</string>
+    <string name="optionB">Theodore Roosevelt</string>
+    <string name="optionC">Donald Trump</string>
+    <string name="optionD">Ulysses S. Grant</string>
+    <string name="wiki">Review</string>
+    <string name="skip">Skip</string>
+    <string name="percentage">100%</string>
+
+</resources>
