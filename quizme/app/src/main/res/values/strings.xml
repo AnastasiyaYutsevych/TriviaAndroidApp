@@ -8,5 +8,7 @@
     <string name="wiki">Review</string>
     <string name="skip">Skip</string>
     <string name="percentage">100%</string>
+    <string name="Right_answer">See the right answer</string>
+    <string name="Submit_button">Submit</string>
 
 </resources>

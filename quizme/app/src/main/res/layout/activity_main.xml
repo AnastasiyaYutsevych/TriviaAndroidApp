@@ -10,14 +10,17 @@
 
     <Button
         android:id="@+id/optionA"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="363dp"
+        android:layout_height="55dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+
         android:background="@android:drawable/divider_horizontal_textfield"
+        android:onClick="answeredA"
         android:paddingLeft="4dp"
         android:paddingTop="4dp"
         android:paddingRight="4dp"
@@ -27,7 +30,7 @@
         app:layout_constraintBottom_toTopOf="@+id/optionB"
         app:layout_constraintDimensionRatio="@android:dimen/dialog_min_width_minor"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/q" />
 
@@ -39,7 +42,9 @@
         android:layout_marginLeft="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
         android:background="@android:drawable/divider_horizontal_textfield"
+        android:onClick="answeredC"
         android:paddingLeft="4dp"
         android:paddingTop="4dp"
         android:paddingRight="4dp"
@@ -61,7 +66,9 @@
         android:layout_marginLeft="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
         android:background="@android:drawable/divider_horizontal_textfield"
+        android:onClick="answeredB"
         android:paddingLeft="4dp"
         android:paddingTop="4dp"
         android:paddingRight="4dp"
@@ -71,7 +78,7 @@
         app:layout_constraintBottom_toTopOf="@+id/optionC"
         app:layout_constraintDimensionRatio="@android:dimen/dialog_min_width_minor"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/optionA" />
 
@@ -83,7 +90,9 @@
         android:layout_marginLeft="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:layout_marginBottom="80dp"
         android:background="@android:drawable/divider_horizontal_textfield"
+        android:onClick="answeredD"
         android:paddingLeft="4dp"
         android:paddingTop="4dp"
         android:paddingRight="4dp"
@@ -93,7 +102,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="@android:dimen/dialog_min_width_minor"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/optionC" />
 
@@ -127,6 +136,7 @@
         android:layout_marginRight="24dp"
         android:background="@android:drawable/divider_horizontal_textfield"
         android:fontFamily="monospace"
+        android:onClick="openWiki"
         android:paddingLeft="2dp"
         android:paddingTop="2dp"
         android:paddingRight="2dp"
@@ -135,7 +145,6 @@
         android:textAllCaps="false"
         android:textColor="#99FFFFFF"
         android:textSize="12sp"
-        android:onClick="openWiki"
         app:layout_constraintBottom_toBottomOf="@+id/percentage"
         app:layout_constraintEnd_toStartOf="@+id/percentage"
         app:layout_constraintHorizontal_bias="0.5"
@@ -183,6 +192,44 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/wiki"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/answer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="28dp"
+        android:background="@android:drawable/divider_horizontal_textfield"
+        android:onClick="showRightAnswer"
+        android:text="@string/Right_answer"
+        android:textAllCaps="false"
+        android:textColor="#99FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/submit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="28dp"
+        android:background="@android:drawable/divider_horizontal_textfield"
+        android:onClick="submit"
+        android:text="@string/Submit_button"
+        android:textAllCaps="false"
+        android:textColor="#99FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/answer" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
